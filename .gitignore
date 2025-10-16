@@ -1,31 +1,34 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# dependencies
-/node_modules
-/.pnp
+# Dependencies
+node_modules/
+.yarn/
 .pnp.js
 
-# testing
-/coverage
+# Next.js
+.next/
+out/
 
-# next.js
-/.next/
-/out/
+# Production
+build
+dist
 
-# production
-/build
-
-# misc
-.DS_Store
-.env.local*
-
-# debug
+# Debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-.blog_index_data
-.blog_index_data_previews
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
 
-.now
-.vercel
+# OS
+.DS_Store
+Thumbs.db
